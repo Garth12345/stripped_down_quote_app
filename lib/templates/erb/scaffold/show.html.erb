@@ -2,7 +2,7 @@
 
 <div class="panel panel-default">
 
-<div class="panel-heading"><%= singular_table_name %></div>
+<div class="panel-heading"><h1 "w3-panel w3-blue"> <%= singular_table_name %> </h1> </div>
 
 <div class="panel-body">
 
@@ -19,7 +19,7 @@
 
 <div class="panel-footer">
 
-<%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>) ,class:"btn btn-xs btn-danger" %> |
-<%%= link_to 'Back', <%= index_helper %>_path , class:"btn btn-xs btn-danger" %>
+<%%= link_to 'Edit', edit_<%= singular_table_name %>_path(@<%= singular_table_name %>) ,class:"w3-button w3-green w3-round-xlarge"%> |
+<%%= link_to 'Back', <%= index_helper %>_path ,class:"w3-button w3-green w3-round-xlarge" %>
 
 </div></div>

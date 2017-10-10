@@ -2,10 +2,10 @@
 
 <h1 class="w3-panel w3-blue">Quotes</h1>
 
-<table class="table table-responsive">
+<table class="w3-table-all">
   <thead>
-    <tr>
-      <th>Name</th>
+    <tr class="w3-light-grey w3-hover-green">
+      <th class="w3-light-grey w3-hover-pink">Name</th>
       <th>Content</th>
       <th colspan="3"></th>
     </tr>
@@ -14,8 +14,8 @@
   <tbody>
     <% @quotes.each do |quote| %>
       <tr>
-        <td><%= quote.name %></td>
-        <td><%= quote.content %></td>
+        <td class="w3-light-grey w3-hover-yellow"><%= quote.name %></td>
+        <td class="w3-light-grey w3-hover-yellow"><%= quote.content %></td>
         <td><%= link_to 'Show', quote , class:"w3-button w3-orange w3-round-xlarge" %></td>
         <td><%= link_to 'Edit', edit_quote_path(quote) , class:"w3-button w3-orange w3-round-xlarge" %></td>
         <td><%= link_to 'Destroy', quote, method: :delete, data: { confirm: 'Are you sure?' } , class:"w3-button w3-orange w3-round-xlarge" %></td>
